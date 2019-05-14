@@ -1,33 +1,121 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: #2A2B2E; 
   color: white;
+  font-family: 'Roboto Slab', serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* NAVBAR STYLE */
+.navbar-yvette {
+  background-color: transparent;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a {
+  color: #D45113; 
+  margin-top: 500px;
+}
+
+nav a:hover{
+  text-decoration: none;
+  color: #D45113; 
+}
+
+#selectAll {
+  font-weight: bold;
+}
+
+/* SEARCH MOVIE STYLE */
+.button-search {
+  background-color: #D45113; 
+  border: #D45113; 
+  color: #eee;
+  margin-right: 84px;
+}
+
+.movies-style {
+  background-color: rgb(32, 34, 34); 
+  border: 1px outset rgb(32, 34, 34);
+  border-radius: 20px;
+  padding: 10px;
+  height: 520px;
+  margin: 10px 0px;
+  
+  position: relative;
+}
+
+.movies-style img {
+  width: 100%; 
+  border-radius: 10px;
+}
+
+.movie-img {
+  width: 100%;
+  height: 290px; 
+  /* original was 340px */
+  margin-bottom: 0px;
+}
+
+.movie-text {
+  background-color: rgb(32, 34, 34);
+  padding: 20px 0px 10px 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.movie-text h5 {
+  height: 75px;
+}
+
+.btn-movie {
+  text-transform: capitalize;
+  margin-top: -80px;
+}
+
+.btn-detail {
+  text-transform: capitalize;
+  margin-top: 0px;
+}
+
+#totalResults {
+  display: none;
+}
+
+/* STYLE SWITCHES */
+.switchBody {
+  background-color: #eee!important;
+  color: #2A2B2E; 
+}
+
+.switchButton {
+  background-color: #2A2B2E;
+  color: #eee;
+}
+
+/* MOVIE DETAILS */
+.movie-details {
+  background-color: #D45113; 
+  border: 1px outset rgb(32, 34, 34, 0.2); 
+  color: #eee; 
+  display: block;
+  position: fixed;
+  top: 100px;
+  left: 25%; 
+  z-index: 2;
+}
+
+.detail-img img {
+  width: 100%; 
+  padding-bottom: 20px;
+}
+
+
+
+
+
+/* TEST */
+.test {
+  background-color: red; 
+  width: 200px;
+  height: 200px;
 }
